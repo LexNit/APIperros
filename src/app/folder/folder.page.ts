@@ -9,6 +9,7 @@ import { Dogmodel } from 'src/app/Dogmodel';
 })
 
 export class FolderPage implements OnInit {
+
   public folder: string;
 
   constructor(private activatedRoute: ActivatedRoute) { }

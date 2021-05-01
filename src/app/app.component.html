@@ -6,6 +6,8 @@
           <ion-list-header>¡Descubre perritos!</ion-list-header>
           <ion-note>Bienvenido a nuestra API de perritos</ion-note>
 
+
+
           <!-- Ribbon izquierdo arriba -->
           <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
             <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">
@@ -14,7 +16,7 @@
             </ion-item>
           </ion-menu-toggle>
         </ion-list>
- 
+
         <!-- Ribbon izquierdo abajo -->
         <ion-list id="labels-list">
           <ion-list-header>Labels</ion-list-header>

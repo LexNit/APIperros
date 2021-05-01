@@ -10,13 +10,13 @@ h1{
     font-weight: 500;
     opacity: 0.8;
   }
-  
+
   h3{
     color: #426696;
     font-weight: 600;
     opacity: 0.8;
   }
-  
+
   main{
     font-family: "Poppins", sans-serif;
     min-height: 100vh;
@@ -25,7 +25,7 @@ h1{
     align-items: center;
     justify-content: center;
   }
-  
+
   .glass{
     background: white;
     min-height: 80vh;
@@ -54,7 +54,7 @@ h1{
     position: absolute;
     border-radius: 50%;
   }
-  
+
   .circulo1{
     top: 5%;
     right: 15%;
@@ -78,7 +78,7 @@ h1{
       rgba(255, 255, 255, 0.3)
     );
     border-radius: 2rem;
-    
+
   }
 
   .link{
@@ -91,7 +91,7 @@ h1{
   .link h2{
     padding: 0rem 2rem;
   }
-    
+
   .mas{
     background: linear-gradient(to right top, #141e30, #243B55);
     border-radius: 1.5rem;
@@ -99,7 +99,7 @@ h1{
     padding: 0.5rem;
     position: relative;
   }
-  
+
   .mas img{
     position: absolute;
     top: 10%;
@@ -111,12 +111,12 @@ h1{
     color: white;
     font-weight: 600;
   }
-  
+
   /* GAMES */
   .status{
     margin-bottom: 3rem;
   }
-  
+
   .status input{
     background: linear-gradient(
       to right bottom,
@@ -128,7 +128,7 @@ h1{
     padding: 0.5rem;
     border-radius: 2rem;
   }
-  
+
   .perros{
     flex: 2;
     margin: 5rem;
@@ -136,7 +136,7 @@ h1{
     flex-direction: column;
     justify-content: space-evenly;
   }
-  
+
   .card{
     display: flex;
     background: linear-gradient(
@@ -150,7 +150,7 @@ h1{
     box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
     justify-content: space-between;
   }
-  
+
 
   .progreso::after{
     content: "";
@@ -166,7 +166,7 @@ h1{
     flex-direction: column;
     justify-content: space-between;
   }
-  
+
   .porcentaje{
     font-weight: bold;
     background: linear-gradient(to right top, #141e30, #243B55);
@@ -184,7 +184,7 @@ h1{
     width: 400px;
 }
 
-.result img{
+.result img {
     object-fit: cover;
     height: 100%;
     width: 100%;
