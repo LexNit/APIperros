@@ -7,30 +7,15 @@
         <ion-button><ion-icon slot="icon-only" name="heart"></ion-icon></ion-button>
       </ion-buttons>
 
-      <h1 #triggerElement>Fun fact !</h1>
+      <h1 #triggerElement>Fun facts !</h1>
 
     </ion-toolbar>
 
-    <strong class="capitalize">Fact</strong>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-    <strong class="capitalize">Fact</strong>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-    <strong class="capitalize">Fact</strong>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-    <strong class="capitalize">Fact</strong>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-    <strong class="capitalize">Fact</strong>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-    <strong class="capitalize">Fact</strong>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-    <strong class="capitalize">Fact</strong>
-    <p>Soy yo</p>
-    <strong class="capitalize">Fact</strong>
-
-    <ion-list *ngFor="let fact of content">
+    <ion-list *ngFor="let f of content">
       <ion-item>
-        <h3>{{fact.fact}}</h3>
+        <h4>{{f.text}}</h4>
       </ion-item>
-    </ion-list>
+    </ion-list><br>
+    <p>La pinche bocina es mía alv y mis huevotes alv <br><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ducimus aliquam suscipit iste nam laborum nemo omnis repudiandae. Quod quam, nulla unde excepturi dicta atque doloribus deleniti vel voluptatem incidunt!</p>
   </div>
 </ion-content>

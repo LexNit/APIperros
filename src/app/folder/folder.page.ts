@@ -13,7 +13,7 @@ export class FolderPage implements OnInit {
 
   public folder: string;
   facts: any = [];
-  private url_facts = 'https://cors-anywhere.herokuapp.com/https://dog-facts-api.herokuapp.com/api/v1/resources/dogs?number=1';
+  private url_facts = 'https://cat-fact.herokuapp.com/facts';
   constructor(private activatedRoute: ActivatedRoute, private http: HttpClient) { }
 
   url:string;
