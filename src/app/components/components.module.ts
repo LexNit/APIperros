@@ -1,3 +1,4 @@
+import { ScrollComponent } from './scroll/scroll.component';
 import { IonicModule } from '@ionic/angular';
 import { FlashHeaderComponent } from './flash-header/flash-header.component';
 import { NgModule } from '@angular/core';
@@ -7,14 +8,16 @@ import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
-    FlashHeaderComponent
+    FlashHeaderComponent,
+    ScrollComponent
   ],
   imports: [
     CommonModule,
     IonicModule
   ],
   exports: [
-    FlashHeaderComponent
+    FlashHeaderComponent,
+    ScrollComponent
   ]
 })
 export class ComponentsModule { }

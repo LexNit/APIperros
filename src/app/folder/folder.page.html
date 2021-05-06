@@ -19,12 +19,13 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <app-flash-header [titulo]="folder"></app-flash-header>
 
 </ion-header>
 
 
 <ion-content [fullscreen]="true">
-  <!-- <ion-header collapse="condense">
+  <!-- <ion-header>
     <ion-toolbar>
       <ion-title size="large">{{ folder }}</ion-title>
     </ion-toolbar>
@@ -36,11 +37,9 @@
     <strong class="capitalize">{{ folder }}</strong>
   </div> -->
       <!-- Seccion derecha (API) -->
-      <app-flash-header [titulo]="folder"></app-flash-header>
 
-        <div class="status">
-          <h1>Let there be dogs!</h1>
-        </div>
+        <ion-card-title class="ion-margin-top">Let there be dogs!</ion-card-title>
+
         <ion-grid>
           <ion-col>
 
@@ -59,11 +58,53 @@
           <ion-col>
           <!-- Aquí va el boton que hace el request -->
             <div class="d-grid gap-2 col-6 mx-auto">
-              <br><button id="dog_btn" (click)="callApi()" class="btn btn-primary btn-dark" type="button">Refresh</button>
+              <br><button id="dog_btn" (click)="callApi()" (click)="getAllFacts()" class="btn btn-primary btn-dark" type="button">Refresh</button>
             </div>
           </ion-col>
         </ion-grid>
 
-        <div class="circulo1"></div>
-        <div class="circulo2"></div>
+        <app-scroll [content]="facts"></app-scroll>
 </ion-content>
+
+<!-- <ion-content class="scroll">
+
+  <div class="ion-padding contenido-scroll">
+
+    <ion-toolbar>
+
+      <ion-buttons slot="end">
+      <ion-button><ion-icon slot="icon-only" name="heart"></ion-icon></ion-button>
+    </ion-buttons>
+    <h1>Fun fact !</h1>
+
+    </ion-toolbar>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+    <p #triggerElement>El.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+
+
+  </div>
+
+</ion-content> -->

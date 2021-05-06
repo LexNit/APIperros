@@ -1,0 +1,36 @@
+<ion-content>
+  <div class="ion-padding content-container">
+
+    <ion-toolbar>
+
+      <ion-buttons slot="end">
+        <ion-button><ion-icon slot="icon-only" name="heart"></ion-icon></ion-button>
+      </ion-buttons>
+
+      <h1 #triggerElement>Fun fact !</h1>
+
+    </ion-toolbar>
+
+    <strong class="capitalize">Fact</strong>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <strong class="capitalize">Fact</strong>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <strong class="capitalize">Fact</strong>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <strong class="capitalize">Fact</strong>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <strong class="capitalize">Fact</strong>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <strong class="capitalize">Fact</strong>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <strong class="capitalize">Fact</strong>
+    <p>Soy yo</p>
+    <strong class="capitalize">Fact</strong>
+
+    <ion-list *ngFor="let fact of content">
+      <ion-item>
+        <h3>{{fact.fact}}</h3>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>
